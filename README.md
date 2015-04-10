@@ -35,6 +35,8 @@ This script is used to export any necessary environment variables from your late
 
 ![Export build vars](https://github.com/dropbox/XCoverage/raw/master/docs/export-build-vars.png)
 
+```python "${SRCROOT}/build_scripts/export_build_vars.py" object_file_dir="${OBJECT_FILE_DIR}-normal/x86_64" build_dir="${OBJROOT}"```
+
 #####3. Add pre-action script to the test section of your scheme
 
 This script will clear any previous .gcda files from your target_object_dir, which helps ensure that this test run will be isolated in the coverage data.
